@@ -1,12 +1,11 @@
 // src/utils/siteUtils.js
 const siteSettings = {
-  siteUrl: 'http://localhost:3000',
+  siteUrl: 'https://morocco.aid-air.com',
   language: 'he',
-  country: 'מדינה',
-  about: 'אתר מרוקו למטייל נוצר מהצורך האישי לעזור לישראלים המבקרים במרוקו בפעם הראשונה. אנחנו שמחים לתת לכם את המידע והידע שלנו על מנת שאתם תוכלו לחווית את מרוקו במלואה',
-  homePageTitle: 'Welcome to Our Travel Blog',
-  homePageDescription: 'Discover the best travel tips, guides, and experiences for your next adventure.',
-  
+  country: 'מרוקו',
+  about: 'אתר מרוקו למטייל נוצר כדי לסייע לישראלים המבקרים במרוקו בפעם הראשונה, עם מידע והמלצות לחוויית טיול מושלמת.',
+  homePageTitle: 'ברוכים הבאים לבלוג הטיולים למרוקו',
+  homePageDescription: 'גלה את הטיפים, המדריכים והחוויות הטובות ביותר לטיול הבא שלך במרוקו.',
 };
 
 module.exports = siteSettings;
