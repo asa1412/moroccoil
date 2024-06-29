@@ -1,0 +1,281 @@
+/* src/components/Article.module.css */
+
+/* General Styles */
+.article ul,
+.article ol {
+  padding-left: 20px; /* Ensure list points are within the border */
+  margin-left: 0;
+  list-style-position: inside;
+  font-family: 'Assistant', sans-serif; /* Ensure font family is applied */
+  font-size: 1rem; /* Ensure font size is applied */
+}
+
+.article li {
+  margin-bottom: 10px;
+}
+
+.article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.article th,
+.article td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.article th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.article tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.article tr:hover {
+  background-color: #f1f1f1;
+}
+
+.article th,
+.article td {
+  display: table-cell;
+}
+
+.article td::before {
+  content: '';
+  display: none;
+}
+
+.author {
+  font-size: var(--font-size-h5);
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+
+  .article .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .article {
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .topSection {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .breadcrumbs {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    font-size: var(--font-size-h1);
+    text-align: right;
+  }
+
+  .authorRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 15px;
+  }
+
+  .authorImage img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .authorInfo {
+    text-align: right;
+    direction: rtl;
+  }
+
+  .subjectImage {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .subjectImage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 720px !important;
+    border-radius: 8px;
+    color: transparent !important;
+  }
+
+  .middleSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .mainColumn {
+    width: 100%;
+    text-align: right;
+  }
+
+  .emptyColumn {
+    width: 100%;
+  }
+
+  .htmlSection,
+  .imageSection {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .imageSection img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px;
+  }
+
+  .article p,
+  .article a,
+  .htmlSection,
+  .imageSection figcaption {
+    text-align: right;
+  }
+
+  .imageSection figcaption {
+    font-size: var(--font-size-span);
+        color: var(--color-analogous-dark);
+        font-family: 'Frank Ruhl Libre';;
+  }  
+}
+
+/* Widescreen CSS */
+@media (min-width: 769px) {
+  .article {
+    max-width: 1280px;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  .topSection {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .authorRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+
+  .authorImage img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .authorInfo {
+    text-align: right;
+  }
+
+  .subjectImage {
+    width: 100%;
+    max-height: 720px;
+    margin: 20px 0;
+  }
+
+  .subjectImage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 720px !important;
+    border-radius: 8px;
+    color: transparent !important;
+  }
+
+  .middleSection {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 96px 36px;
+  }
+
+  .mainColumn {
+    width: 700px;
+    text-align: right;
+  }
+
+  .emptyColumn {
+    width: calc(1152px - 700px);
+  }
+
+  .article h1 {
+    margin: 64px;
+    font-size: 64px;
+    font-weight: 400;
+  }
+
+  .article img {
+    border-radius: 8px;
+  }
+
+  .article figure {
+    margin: 20px 0;
+  }
+
+  .article figcaption {
+    font-size: var(--font-size-span);
+    color: var(--color-analogous-dark);
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .article p,
+  .article a,
+  .htmlSection {
+    margin: 20px 0;
+    text-align: right;
+  }
+
+  .imageSection {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .article ul,
+  .article ol {
+    padding-left: 20px;
+    margin-left: 0;
+    list-style-position: inside;
+  }
+
+  .article li {
+    margin-bottom: 10px;
+  }
+}

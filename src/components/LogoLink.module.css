@@ -1,0 +1,11 @@
+/* src/components/LogoLink.css */
+.logo-link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
