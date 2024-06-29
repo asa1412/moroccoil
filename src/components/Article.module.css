@@ -56,6 +56,11 @@
   font-size: var(--font-size-h5);
 }
 
+.article a {
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
 /* Mobile CSS */
 @media (max-width: 768px) {
 
