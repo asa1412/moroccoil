@@ -16,7 +16,7 @@
   
   .breadcrumb-item a {
     text-decoration: none;
-    color: #0070f3;
+    color: var(--color-complementary-dark);
   }
   
   .breadcrumb-item a:hover {

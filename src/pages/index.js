@@ -3,7 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 import Hero from '../components/Hero';
 import ArticleList from '../components/ArticleList';
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 
 const Home = () => {
   return (

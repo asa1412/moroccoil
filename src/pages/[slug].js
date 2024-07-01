@@ -7,7 +7,7 @@ import OptimizedImage from '../components/OptimizedImage';
 import { articleImageSettings } from '../utils/imageSettings';
 import styles from '../components/Article.module.css';
 import Breadcrumbs from '../components/Breadcrumbs';
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 
 const loadJSON = (filePath) => {
   const data = fs.readFileSync(filePath, 'utf-8');

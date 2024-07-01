@@ -1,7 +1,7 @@
 // src/components/Hero.js
 import React from 'react';
 import styles from './Hero.module.css'; // Correctly use CSS modules
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 import Link from 'next/link';
 
 
@@ -15,12 +15,9 @@ const Hero = () => {
       
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>{`${siteSettings.country} ${currentYear} - מתל אביב ל${siteSettings.country} עבור המטייל הישראלי`}</h1>
-        <h2 className={styles.heroSubtitle}>מחפשים הרפתקה בלתי נשכחת?
-          רוצים לדעת על המקומות הסודיים של {siteSettings.country}?
-          מה חשוב לדעת לפני הנסיעה?
-          אל תחמיצו את המדריך המלא שלנו!
-          טיול קסום במדבר הסהרה, שוקי מראקש הצבעוניים, וסודות התרבות העתיקה של מרוקו
-          גלו את כל מה שצריך לדעת לפני שאתם יוצאים למסע המרגש!</h2>
+        <h2 className={styles.heroSubtitle}>
+          {siteSettings.heroSubtitle}
+        </h2>
       </div>
       <div className={styles.heroButtonsFrame}>
         <div className={styles.heroButtonsRow}>

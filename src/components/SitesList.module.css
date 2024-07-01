@@ -1,0 +1,25 @@
+/* src/components/SitesList.module.css */
+
+.sitesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .sitesTable th,
+  .sitesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .sitesTable th {
+    background-color: #f2f2f2;
+    text-align: right;
+  }
+  
+  .sitesList {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 20px 0;
+  }
+  

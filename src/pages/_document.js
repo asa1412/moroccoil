@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

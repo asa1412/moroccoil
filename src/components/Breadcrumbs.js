@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 import styles from './Breadcrumbs.module.css'; // Import the CSS module
 
 const Breadcrumbs = ({ title }) => {

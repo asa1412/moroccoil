@@ -8,7 +8,7 @@ import closeIcon from '../assets/images/close.svg';
 import accessibilityIcon from '../assets/images/Accessibility.svg';
 import arrowBackIcon from '../assets/images/arrow_back.svg';
 
-import siteSettings from '../utils/siteUtils';
+import siteSettings from '../assets/data/siteUtils';
 
 const Menu = ({ toggleAccessibilityPanel }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
