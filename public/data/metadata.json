@@ -416,19 +416,6 @@
         "seoDescription": "מדריך לבטיחות במרוקו: טיפים וייעוץ למטייל הישראלי."
     },
     {
-        "id": "131",
-        "title": "מזג אוויר במרוקו: עונות ומזג אוויר לפי אזור",
-        "shortDescription": "מדריך למזג האוויר במרוקו: עונות ומזג אוויר לפי אזור.",
-        "image": "/images/131_1.webp",
-        "url": "/morocco-weather",
-        "lastModified": "2024-06-05",
-        "author": "Denis Rom",
-        "keywords": "מזג אוויר במרוקו",
-        "datePublished": "2024-06-05",
-        "category": "General",
-        "seoDescription": "מדריך למזג האוויר במרוקו: עונות ומזג אוויר לפי אזור."
-    },
-    {
         "id": "132",
         "title": "אשרות וויזות למרוקו: מה צריך לדעת",
         "shortDescription": "מדריך לאשרות וויזות למרוקו: מה צריך לדעת לפני הנסיעה.",
@@ -882,5 +869,18 @@
         "datePublished": "2024-06-14",
         "category": "General",
         "seoDescription": "מדריך לטיולי טרקים במרוקו: מסלולים, ציוד וטיפים."
+    },
+    {
+        "id": "131",
+        "title": "מזג אוויר במרוקו: עונות ומזג אוויר לפי אזור",
+        "shortDescription": "מדריך למזג האוויר במרוקו: עונות ומזג אוויר לפי אזור.",
+        "image": "/images/131_1.webp",
+        "url": "/morocco-weather",
+        "lastModified": "2024-07-01",
+        "author": "Denis Rom",
+        "keywords": "מזג אוויר במרוקו",
+        "datePublished": "2024-07-01",
+        "category": "General",
+        "seoDescription": "מדריך למזג האוויר במרוקו: עונות ומזג אוויר לפי אזור."
     }
 ]
