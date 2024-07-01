@@ -12,8 +12,8 @@ const SitesList = ({ sites, displayType }) => {
       <table className={styles.sitesTable}>
         <thead>
           <tr>
-            <th>Website Name</th>
-            <th>Description</th>
+            <th>שם האתר</th>
+            <th>מה תמצאו באתר שלנו</th>
           </tr>
         </thead>
         <tbody>
