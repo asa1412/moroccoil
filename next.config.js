@@ -1,4 +1,4 @@
-const siteSettings = require('./src/utils/siteUtils');
+const siteSettings = require('./src/assets/data/siteUtils');
 
 module.exports = {
   reactStrictMode: true,

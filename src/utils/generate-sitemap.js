@@ -1,4 +1,4 @@
-const siteSettings = require('./siteUtils');
+const siteSettings = require('./assets/data/siteUtils');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { readFileSync } = require('fs');
 const path = require('path');

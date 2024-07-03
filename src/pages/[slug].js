@@ -55,8 +55,16 @@ export async function getStaticProps({ params }) {
     }
   });
 
+  // Load categories
+  const categoriesFilePath = path.join(process.cwd(), 'src', 'assets', 'data', 'categories.json');
+  const categoriesFileContents = fs.readFileSync(categoriesFilePath, 'utf-8');
+  const categories = JSON.parse(categoriesFileContents);
+
+  const categoryUrl = categories.find(cat => cat.name === metadata.category)?.url || '';
+
+  // Include categories in the returned props
   return {
-    props: { content, metadata, subjectImageSrc, subjectImageMetadata },
+    props: { content, metadata, subjectImageSrc, subjectImageMetadata, categoryUrl },
     revalidate: 60 * 60 * 24 // Revalidate once per day
   };
 }
@@ -97,14 +105,14 @@ const generateJsonLd = (metadata) => {
   };
 };
 
-const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata }) => {
+const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, categoryUrl, categories }) => {
   const router = useRouter();
   const jsonLd = generateJsonLd(metadata);
 
   return (
     <article className={styles.article}>
       <Head>
-        <title>{metadata.title}</title>
+        <title>{`${metadata.title}`}</title>
         <meta name="description" content={metadata.seoDescription} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.seoDescription} />
@@ -116,7 +124,7 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata }) =
       </Head>
 
       <div className={styles.topSection}>
-        <Breadcrumbs title={metadata.title} />
+        <Breadcrumbs title={metadata.title} category={metadata.category} categoryUrl={categoryUrl} isCategoryPage={false} />
         <h1 className={styles.title}>{metadata.title}</h1>
         <div className={styles.authorRow}>
           <div className={styles.authorImage}>

@@ -1,12 +1,24 @@
 // src/components/Breadcrumbs.js
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import siteSettings from '../assets/data/siteUtils';
-import styles from './Breadcrumbs.module.css'; // Import the CSS module
+import styles from './Breadcrumbs.module.css';
 
-const Breadcrumbs = ({ title }) => {
+const Breadcrumbs = ({ title, category, categoryUrl, isCategoryPage }) => {
   const router = useRouter();
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    if (router.isReady) {
+      setIsReady(true);
+    }
+  }, [router.isReady]);
+
+  if (!isReady) {
+    return null; // Or some loading state
+  }
+
   const pathnames = router.asPath.split('/').filter((x) => x);
 
   const breadcrumbList = pathnames.map((name, index) => {
@@ -14,7 +26,7 @@ const Breadcrumbs = ({ title }) => {
     return {
       '@type': 'ListItem',
       position: index + 2, // Adjusted position to account for Home
-      name: index === pathnames.length - 1 ? title : name, // Use title for the last item
+      name: index === pathnames.length - 1 ? title : decodeURIComponent(name), // Decode URI components for display
       item: `${siteSettings.siteUrl}${url}`
     };
   });
@@ -29,6 +41,12 @@ const Breadcrumbs = ({ title }) => {
         name: 'Home',
         item: `${siteSettings.siteUrl}/`
       },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: category,
+        item: `${siteSettings.siteUrl}/categories/${categoryUrl}`
+      },
       ...breadcrumbList
     ]
   };
@@ -40,12 +58,17 @@ const Breadcrumbs = ({ title }) => {
           <li className={styles['breadcrumb-item']}>
             <Link href="/">ראשי</Link>
           </li>
-          {pathnames.map((name, index) => {
+          <li className={styles['breadcrumb-item']}>
+            <Link href={`/categories/${categoryUrl}`}>
+              {category}
+            </Link>
+          </li>
+          {!isCategoryPage && pathnames.map((name, index) => {
             const url = `/${pathnames.slice(0, index + 1).join('/')}`;
             return (
               <li key={url} className={styles['breadcrumb-item']}>
                 <Link href={url}>
-                  {index === pathnames.length - 1 ? title : name}
+                  {index === pathnames.length - 1 ? title : decodeURIComponent(name)}
                 </Link>
               </li>
             );
