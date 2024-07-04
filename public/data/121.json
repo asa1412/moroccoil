@@ -1,7 +1,7 @@
 {
     "title": "תרבות מרוקאית: מסורות, מוזיקה ואמנות",
     "author": "Denis Rom",
-    "datePublished": "2024-06-02",
+    "datePublished": "2024-07-03",
     "seo": {
         "description": "מדריך לתרבות המרוקאית: מסורות, מוזיקה ואמנות.",
         "keywords": "תרבות מרוקאית",
@@ -95,5 +95,6 @@
             "type": "html",
             "content": "<p>אם אתם מחפשים להעמיק עוד בנושא התרבות המרוקאית, אנו ממליצים לכם לבקר במדריך שלנו על <a href=\"/moroccan-food\" rel=\"noreferrer\" target=\"_new\">מאכלים מרוקאיים</a> ו<a href=\"/morocco-festivals\" rel=\"noreferrer\" target=\"_new\">פסטיבלים במרוקו</a>, ולהמשיך את המסע שלכם בעולם המרתק של מרוקו.</p>"
         }
-    ]
+    ],
+    "category": "תרבות והיסטוריה"
 }

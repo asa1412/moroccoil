@@ -1,7 +1,7 @@
 {
     "title": "אשרות ויזה למרוקו: מסמכים נדרשים",
     "author": "Denis Rom",
-    "datePublished": "2024-06-09",
+    "datePublished": "2024-07-03",
     "seo": {
         "description": "מדריך לאשרות ויזה ומסמכים נדרשים למרוקו.",
         "keywords": "אשרות במרוקו",
@@ -159,5 +159,6 @@
             "type": "html",
             "content": "<table><thead><tr><th>סוג האשרה</th><th>מטרת הביקור</th><th>תוקף</th></tr></thead><tbody><tr><td>אשרת תייר</td><td>תיירות</td><td>90 ימים</td></tr><tr><td>אשרת עסקים</td><td>פעילות עסקית</td><td>משתנה</td></tr><tr><td>אשרת עבודה</td><td>עבודה במרוקו</td><td>משתנה</td></tr><tr><td>אשרת סטודנט</td><td>לימודים</td><td>משתנה</td></tr></tbody></table>"
         }
-    ]
+    ],
+    "category": "טיפים ומידע שימושי"
 }

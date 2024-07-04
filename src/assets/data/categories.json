@@ -1,0 +1,26 @@
+[
+    {
+        "name": "חוויות מיוחדות",
+        "url": "unique-experiences"
+    },
+    {
+        "name": "תרבות והיסטוריה",
+        "url": "culture-history"
+    },
+    {
+        "name": "טיפים ומידע שימושי",
+        "url": "tips-useful-info"
+    },
+    {
+        "name": "טבע והרפתקאות",
+        "url": "nature-adventures"
+    },
+    {
+        "name": "אוכל ומסעדות",
+        "url": "food-restaurants"
+    },
+    {
+        "name": "מדריכי ערים",
+        "url": "city-guides"
+    }
+]

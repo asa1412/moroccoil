@@ -1,7 +1,7 @@
 {
     "title": "סיור תרבותי בפז: אתרי מורשת ומוזיאונים",
     "author": "Denis Rom",
-    "datePublished": "2024-05-29",
+    "datePublished": "2024-07-03",
     "seo": {
         "description": "סיור תרבותי בעיר פז: אתרי מורשת, מוזיאונים ושווקים.",
         "keywords": "פז סיור תרבותי",
@@ -159,5 +159,6 @@
             "type": "html",
             "content": "<p>לסיורים נוספים בערים מרוקניות אחרות, בקרו בעמודים הבאים: <a href=\"/marrakech-attractions\" rel=\"noreferrer\" target=\"_new\">אטרקציות במרקש</a>, <a href=\"/rabat-history\" rel=\"noreferrer\" target=\"_new\">ההיסטוריה של רבאט</a>.</p>"
         }
-    ]
+    ],
+    "category": "תרבות והיסטוריה"
 }
