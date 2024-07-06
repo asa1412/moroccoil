@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /private/
+
+User-agent: Googlebot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: AmazonBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: *
+Crawl-delay: 10
