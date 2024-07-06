@@ -65,7 +65,6 @@ export async function getStaticProps({ params }) {
   // Include categories in the returned props
   return {
     props: { content, metadata, subjectImageSrc, subjectImageMetadata, categoryUrl },
-    revalidate: 60 * 60 * 24 // Revalidate once per day
   };
 }
 
