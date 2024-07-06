@@ -1,3 +1,5 @@
+// E:\CRM\Firebase\sites\moroccoil\src\utils\generate-sitemap.js
+
 const siteSettings = require('./assets/data/siteUtils');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { readFileSync } = require('fs');
@@ -15,8 +17,6 @@ const metadataFilePath = path.join(dataDir, 'metadata.json');
 console.log('Metadata File Path:', metadataFilePath);
 const metadata = JSON.parse(readFileSync(metadataFilePath, 'utf-8'));
 
-// console.log('Metadata:', metadata);
-
 // Create a sitemap stream
 const sitemap = new SitemapStream({ hostname: siteSettings.siteUrl });
 
@@ -26,7 +26,6 @@ sitemap.write({ url: '/about', changefreq: 'monthly', priority: 0.8 });
 
 // Add dynamic pages from metadata.json
 metadata.forEach(article => {
-  // console.log('Adding article to sitemap:', article.url);
   sitemap.write({
     url: article.url,
     changefreq: 'monthly',

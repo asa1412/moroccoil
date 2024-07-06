@@ -869,5 +869,44 @@
         "datePublished": "2024-07-01",
         "category": "טיפים ומידע שימושי",
         "seoDescription": "מדריך למזג האוויר במרוקו: עונות ומזג אוויר לפי אזור."
+    },
+    {
+        "id": "100",
+        "title": "סיור תרבותי בפז: אתרי מורשת ומוזיאונים",
+        "shortDescription": "סיור תרבותי בעיר פז: אתרי מורשת, מוזיאונים ושווקים.",
+        "image": "/images/100_1.webp",
+        "url": "/fes-cultural-tour",
+        "lastModified": "2024-07-06",
+        "author": "Denis Rom",
+        "keywords": "פז סיור תרבותי",
+        "datePublished": "2024-07-06",
+        "category": "תרבות והיסטוריה",
+        "seoDescription": "סיור תרבותי בעיר פז: אתרי מורשת, מוזיאונים ושווקים."
+    },
+    {
+        "id": "125",
+        "title": "סיורי יין במרוקו: יקבים וטעימות יין",
+        "shortDescription": "מדריך לסיורי יין במרוקו: יקבים מומלצים וטעימות יין.",
+        "image": "/images/125_1.webp",
+        "url": "/wine-tours-morocco",
+        "lastModified": "2024-07-06",
+        "author": "Denis Rom",
+        "keywords": "סיורי יין במרוקו",
+        "datePublished": "2024-07-06",
+        "category": "אוכל ומסעדות",
+        "seoDescription": "מדריך לסיורי יין במרוקו: יקבים מומלצים וטעימות יין."
+    },
+    {
+        "id": "160",
+        "title": "מוזיאונים במרוקו: אמנות, היסטוריה ותרבות",
+        "shortDescription": "מדריך למוזיאונים במרוקו: אמנות, היסטוריה ותרבות.",
+        "image": "/images/160_1.webp",
+        "url": "/morocco-museums",
+        "lastModified": "2024-07-06",
+        "author": "Denis Rom",
+        "keywords": "מוזיאונים במרוקו",
+        "datePublished": "2024-07-06",
+        "category": "מדריכי ערים",
+        "seoDescription": "מדריך למוזיאונים במרוקו: אמנות, היסטוריה ותרבות."
     }
 ]

@@ -1,4 +1,4 @@
-// src/utils/siteUtils.js
+// src/assets/data/siteUtils.js
 const siteSettings = {
   siteUrl: 'https://morocco.aid-air.com/',
   language: 'he',
