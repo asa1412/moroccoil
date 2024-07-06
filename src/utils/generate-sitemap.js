@@ -1,6 +1,6 @@
 // E:\CRM\Firebase\sites\moroccoil\src\utils\generate-sitemap.js
 
-const siteSettings = require('./assets/data/siteUtils');
+const siteSettings = require('../assets/data/siteUtils');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { readFileSync } = require('fs');
 const path = require('path');
