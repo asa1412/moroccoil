@@ -3,6 +3,9 @@ const siteSettings = require('./src/assets/data/siteUtils');
 module.exports = {
   reactStrictMode: true,
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
   env: {
     CONTENT_PATH: 'public/data',
     IMAGES_PATH: 'public/images',
