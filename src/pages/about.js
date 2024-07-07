@@ -1,9 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/About.module.css';
 import SitesList from '../components/SitesList';
 import fs from 'fs';
 import path from 'path';
+
 
 export async function getStaticProps() {
   // Read the section about content
@@ -46,7 +48,13 @@ const About = ({ head, sectionContent, sites }) => (
         <p>דניס שואף לתת מענה לכל צרכי המטיילים ולעזור להם לחוות את מרוקו בצורה המהנה והבלתי נשכחת ביותר. הוא משלב ניסיון מקצועי עם אהבה לטיולים, והידע העמוק שלו על תהליך הוצאת הויזות עוזר ללקוחותיו ליהנות מנסיעה חלקה ונטולת דאגות.</p>
       </div>
       <div className={styles.columnRight}>
-        <img src="/staticImages/author.webp" alt="Dennis Rom" className={styles.image} />
+        <Image
+          src="/staticImages/author.webp"
+          alt="Dennis Rom"
+          width={350} // Set the appropriate width
+          height={350} // Set the appropriate height
+          className={styles.image}
+        />
       </div>
     </section>
     <section>

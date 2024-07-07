@@ -150,14 +150,14 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
               placeholderSrc="/staticImages/low-quality-placeholder.webp"
               alt={subjectImageMetadata.alt}
               title={subjectImageMetadata.title}
-              width={articleImageSettings.width}
+              width={1240}
               height={720}
-              style={{ width: '100%', height: 'auto', maxHeight: '720px', color: 'transparent' }} // Maintain aspect ratio and max height
-              priority={true}
+              style={{ color: 'transparent' }} // Maintain aspect ratio and max height
             />
             <figcaption>{subjectImageMetadata.caption}</figcaption>
           </figure>
         )}
+
       </div>
 
       <div className={styles.middleSection}>
@@ -177,8 +177,8 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
                     width={articleImageSettings.width}
                     height={articleImageSettings.height}
                     priority={index === 0} // Prioritize the first image in the content
-                    style={{ width: '100%', height: 'auto' }} // Maintain aspect ratio
-                  />
+                    style={{ width: '100%', height: '720px', maxHeight: '720px', color: 'transparent' }} // Maintain aspect ratio and max height
+                    />
                   <figcaption>{section.caption}</figcaption>
                 </figure>
               );

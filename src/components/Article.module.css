@@ -111,19 +111,6 @@
     direction: rtl;
   }
 
-  .subjectImage {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .subjectImage img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 720px !important;
-    border-radius: 8px;
-    color: transparent !important;
-  }
-
   .middleSection {
     display: flex;
     flex-direction: column;
@@ -204,20 +191,6 @@
 
   .authorInfo {
     text-align: right;
-  }
-
-  .subjectImage {
-    width: 100%;
-    max-height: 720px;
-    margin: 20px 0;
-  }
-
-  .subjectImage img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 720px !important;
-    border-radius: 8px;
-    color: transparent !important;
   }
 
   .middleSection {
