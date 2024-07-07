@@ -22,6 +22,7 @@ const HighPriorityImage = ({ src, placeholderSrc, alt, title, width, height, sty
         width={width}
         height={height}
         priority={false} // Always high priority
+        onLoad={() => setLoaded(true)}
         className={styles.image}
         style={{ ...style }} // Apply styles from props
       />
