@@ -2,6 +2,7 @@ const siteSettings = require('./src/assets/data/siteUtils');
 
 module.exports = {
   reactStrictMode: true,
+  trailingSlash: true,
   output: 'export',
   images: {
     unoptimized: true,
