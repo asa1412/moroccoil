@@ -3,7 +3,8 @@ import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import OptimizedImage from '../components/OptimizedImage';
+import ContentImage from '../components/ContentImage';
+import HighPriorityImage from '../components/HighPriorityImage';
 import { articleImageSettings } from '../utils/imageSettings';
 import styles from '../components/Article.module.css';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -127,13 +128,14 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
         <h1 className={styles.title}>{metadata.title}</h1>
         <div className={styles.authorRow}>
           <div className={styles.authorImage}>
-            <img 
+            <ContentImage 
               src="/staticImages/author.webp" 
+              placeholderSrc="/staticImages/low-quality-placeholder.webp" 
               alt={`Photo of ${metadata.author}`} 
-              width="50" 
-              height="50" 
-              loading="lazy" 
-              decoding="async" 
+              width={50} 
+              height={50} 
+              style={{ width: '50px', height: '50px' }} // Maintain aspect ratio
+              priority={false} // Not a high priority image
             />
           </div>
           <div className={styles.authorInfo}>
@@ -143,15 +145,15 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
         </div>
         {subjectImageSrc && (
           <figure className={styles.subjectImage}>
-            <OptimizedImage
+            <HighPriorityImage 
               src={subjectImageSrc}
               placeholderSrc="/staticImages/low-quality-placeholder.webp"
               alt={subjectImageMetadata.alt}
               title={subjectImageMetadata.title}
               width={articleImageSettings.width}
               height={720}
-              priority={true} // Ensure priority is true for the subject image
               style={{ width: '100%', height: 'auto', maxHeight: '720px', color: 'transparent' }} // Maintain aspect ratio and max height
+              priority={true}
             />
             <figcaption>{subjectImageMetadata.caption}</figcaption>
           </figure>
@@ -167,7 +169,7 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
             if (section.type === 'image') {
               return (
                 <figure key={index} className={styles.imageSection}>
-                  <OptimizedImage
+                  <ContentImage 
                     src={section.src}
                     placeholderSrc="/staticImages/low-quality-placeholder.webp" // Low-quality placeholder
                     alt={section.alt}
