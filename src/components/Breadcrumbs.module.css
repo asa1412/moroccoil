@@ -1,34 +1,34 @@
 /* src/components/Breadcrumbs.module.css */
 .breadcrumb {
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap; /* Ensures items stay in a single row */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .breadcrumb-item {
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .breadcrumb-item a {
-    text-decoration: none;
-    color: var(--color-complementary-dark);
-  }
-  
-  .breadcrumb-item a:hover {
-    text-decoration: underline;
-  }
-  
-  .breadcrumb-item::after {
-    content: '>';
-    margin-left: 0.5rem;
-  }
-  
-  .breadcrumb-item:last-child::after {
-    content: '';
-  }
-  
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line */
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap; /* Prevent text from wrapping within each breadcrumb item */
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: var(--color-complementary-dark);
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item::after {
+  content: '>';
+  margin-left: 0.5rem;
+}
+
+.breadcrumb-item:last-child::after {
+  content: '';
+}

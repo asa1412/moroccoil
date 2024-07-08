@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ContentImage from '../components/ContentImage';
 import HighPriorityImage from '../components/HighPriorityImage';
+import AuthorImage from '../components/AuthorImage';
 import { articleImageSettings } from '../utils/imageSettings';
 import styles from '../components/Article.module.css';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -113,6 +114,7 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
     <article className={styles.article}>
       <Head>
         <title>{`${metadata.title}`}</title>
+        <link rel="preload" as="image" href={subjectImageSrc} />
         <meta name="description" content={metadata.seoDescription} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.seoDescription} />
@@ -128,7 +130,7 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
         <h1 className={styles.title}>{metadata.title}</h1>
         <div className={styles.authorRow}>
           <div className={styles.authorImage}>
-            <ContentImage 
+            <AuthorImage 
               src="/staticImages/author.webp" 
               placeholderSrc="/staticImages/low-quality-placeholder.webp" 
               alt={`Photo of ${metadata.author}`} 

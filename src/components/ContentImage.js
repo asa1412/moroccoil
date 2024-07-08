@@ -16,7 +16,7 @@ const ContentImage = ({ src, placeholderSrc, alt, title, width, height, priority
           height={height}
           priority={priority}
           className={`${styles.image} ${styles.placeholder}`}
-          style={{ ...style }} // Apply styles from props
+          style={{ objectFit: 'contain', ...style }} // Apply styles from props
           fetchpriority={priority ? 'high' : 'auto'} // Ensure lowercase attribute
         />
       )}
@@ -28,8 +28,9 @@ const ContentImage = ({ src, placeholderSrc, alt, title, width, height, priority
         height={height}
         priority={priority}
         onLoad={() => setLoaded(true)}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className={`${styles.image} ${loaded ? styles.loaded : styles.hidden}`}
-        style={{ ...style }} // Apply styles from props
+        style={{ objectFit: 'contain', ...style }} // Apply styles from props
         fetchpriority={priority ? 'high' : 'auto'} // Ensure lowercase attribute
       />
     </div>

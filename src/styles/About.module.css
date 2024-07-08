@@ -14,7 +14,9 @@
 }
 
 .columnLeft {
-  flex: 0 0 50%;  
+  flex: 0 0 50%;
+  background-color: #faf7f3;
+  padding: 15px;  
 }
 
 .columnRight {
@@ -51,7 +53,7 @@
 
   .columnLeft, .columnRight {
     flex: 0 0 100%;
-    padding: 0;
+    padding: 5px;
   }
 
   .columnRight {

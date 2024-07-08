@@ -51,11 +51,11 @@ export async function getStaticProps({ params }) {
 const CategoryPage = ({ category, categoryUrl, articles = [] }) => (
   <div className={styles.container}>
     <Head>
-      <title>{`${category} - all articles`}</title>
+      <title>{`${category} - כל המאמרים בנושא `}</title>
       <meta name="description" content={`כל המאמרים בנושא ${category}`} />
     </Head>
     <Breadcrumbs title={category} category={category} categoryUrl={categoryUrl} isCategoryPage={true} />
-    <h1>Articles on {category}</h1>
+    <h1>כל המאמרים בנושא {category}</h1>
     <ul className={styles.articleList}>
       {articles.map(article => (
         <li key={article.id} className={styles.articleItem}>
