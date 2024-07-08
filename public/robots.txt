@@ -1,5 +1,127 @@
-User-agent: *
-Disallow:
+# robots.txt for Firebase-hosted website
 
+# Allow beneficial search engines with rate limiting
+User-agent: Googlebot
+Crawl-delay: 5
+
+User-agent: Bingbot
+Crawl-delay: 10
+
+User-agent: YandexBot
+Crawl-delay: 15
+
+User-agent: DuckDuckBot
+Crawl-delay: 20
+
+User-agent: Applebot
+Crawl-delay: 20
+
+# Allow Google services with some restrictions
+User-agent: Googlebot-Image
+Crawl-delay: 10
+
+User-agent: Googlebot-Video
+Crawl-delay: 10
+
+User-agent: Google-Read-Aloud
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# Block potentially resource-intensive bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Allow monitoring and analytics with rate limiting
+User-agent: UptimeRobot
+Crawl-delay: 60
+
+User-agent: Pingdom
+Crawl-delay: 60
+
+User-agent: NewRelicPinger
+Crawl-delay: 60
+
+# Block advertising and marketing bots
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: AmazonAdBot
+Disallow: /
+
+User-agent: Grapeshot
+Disallow: /
+
+User-agent: CriteoBot
+Disallow: /
+
+# Allow essential services
+User-agent: Stripe
+Allow: /
+
+User-agent: PayPal
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# Block other known resource-intensive or unnecessary bots
+User-agent: DataForSEO
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: Seekport
+Disallow: /
+
+User-agent: Baidu
+Disallow: /
+
+User-agent: Trendiction Bot
+Disallow: /
+
+User-agent: Proximic
+Disallow: /
+
+User-agent: Yeti by Naver
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: Mojeek
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+# Default rule for all other bots
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Crawl-delay: 30
+
+# Sitemap
 Sitemap: https://moroccoil/sitemap/sitemap.xml
 Sitemap: https://moroccoil/sitemap/sitemap-image.xml
