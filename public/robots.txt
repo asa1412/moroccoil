@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://your-website-url.com/sitemap/sitemap.xml
+Sitemap: https://moroccoil/sitemap/sitemap.xml

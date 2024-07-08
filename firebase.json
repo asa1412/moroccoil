@@ -15,6 +15,14 @@
             "value": "DENY"
           },
           {
+            "key": "Content-Encoding",
+            "value": "gzip"
+          },
+          {
+            "key": "Content-Encoding",
+            "value": "br"
+          },          
+          {
             "key": "X-Content-Type-Options",
             "value": "nosniff"
           },
@@ -29,11 +37,11 @@
         ]
       },
       {
-        "source": "**/*.@(jpg|webp|jpeg|gif|png|css|js)",
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|css|js|webp|woff2)",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=31536000"
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       }

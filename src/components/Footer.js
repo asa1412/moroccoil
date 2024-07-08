@@ -9,7 +9,6 @@ import instagramIcon from '../assets/images/instagram.svg';
 import twitterIcon from '../assets/images/twitter.svg';
 import youtubeIcon from '../assets/images/youtube.svg';
 import linkedinIcon from '../assets/images/linkedin.svg';
-import SitesList from '../components/SitesList';
 
 const Footer = ({ sites }) => (
   <footer>
@@ -19,12 +18,6 @@ const Footer = ({ sites }) => (
         <p>{siteSettings.about}</p>
         <a href="/about">עוד עלינו</a>
       </div>
-
-      <div className={styles.footerColumn}>
-        <h3>גלו מדינות נוספות</h3>
-        <SitesList sites={sites} displayType="list" />
-      </div>
-
       <div className={styles.footerColumn}>
         <Image src={logoIcon} className={styles.logo} alt="Menu" />
         <div className={styles.socialIcons}>
