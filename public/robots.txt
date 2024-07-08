@@ -2,3 +2,4 @@ User-agent: *
 Disallow:
 
 Sitemap: https://moroccoil/sitemap/sitemap.xml
+Sitemap: https://moroccoil/sitemap/sitemap-image.xml
