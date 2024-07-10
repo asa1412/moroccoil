@@ -3,15 +3,16 @@
 /* General Styles */
 .article ul,
 .article ol {
-  padding-left: 20px; /* Ensure list points are within the border */
-  margin-left: 0;
-  list-style-position: inside;
-  font-family: 'Assistant', sans-serif; /* Ensure font family is applied */
-  font-size: 1rem; /* Ensure font size is applied */
+  padding-right: 20px;
+  margin-right: 0;
+  list-style-position: outside;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1rem;
 }
 
 .article li {
   margin-bottom: 10px;
+  padding-right: 10px;
 }
 
 .article table {
@@ -24,9 +25,8 @@
 .article td {
   padding: 15px;
   border: 1px solid #ddd;
-  text-align: left;
-  font-size: 1rem;
   text-align: right;
+  font-size: 1rem;
 }
 
 .article th {
@@ -40,16 +40,6 @@
 
 .article tr:hover {
   background-color: #f1f1f1;
-}
-
-.article th,
-.article td {
-  display: table-cell;
-}
-
-.article td::before {
-  content: '';
-  display: none;
 }
 
 .author {
@@ -69,69 +59,35 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .article {
+  .article,
+  .topSection,
+  .middleSection,
+  .mainColumn,
+  .emptyColumn,
+  .htmlSection,
+  .imageSection {
     max-width: 100%;
     margin: 0 auto;
-    line-height: 1.6;
-  }
-
-  .topSection {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .breadcrumbs {
-    text-align: left;
-    margin-bottom: 10px;
-  }
-
-  .title {
-    margin-bottom: 10px;
-    font-size: var(--font-size-h1);
     text-align: right;
+  }
+
+  .breadcrumbs,
+  .title,
+  .authorRow,
+  .authorInfo,
+  .htmlSection,
+  .imageSection img,
+  .article p,
+  .article a,
+  .htmlSection {
+    margin-bottom: 10px;
   }
 
   .authorRow {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
     gap: 15px;
-  }
-
-  .authorImage img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .authorInfo {
-    text-align: right;
-    direction: rtl;
-  }
-
-  .middleSection {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .mainColumn {
-    width: 100%;
-    text-align: right;
-  }
-
-  .emptyColumn {
-    width: 100%;
-  }
-
-  .htmlSection,
-  .imageSection {
-    width: 100%;
-    margin: 10px 0;
-    text-align: center;
   }
 
   .imageSection img {
@@ -139,19 +95,6 @@
     height: auto !important;
     border-radius: 8px;
   }
-
-  .article p,
-  .article a,
-  .htmlSection,
-  .imageSection figcaption {
-    text-align: right;
-  }
-
-  .imageSection figcaption {
-    font-size: var(--font-size-span);
-        color: var(--color-analogous-dark);
-        font-family: 'Frank Ruhl Libre';;
-  }  
 }
 
 /* Widescreen CSS */
@@ -163,34 +106,52 @@
     padding: 20px;
   }
 
-  .topSection {
-    width: 100%;
+  .topSection,
+  .middleSection,
+  .mainColumn,
+  .emptyColumn,
+  .htmlSection,
+  .imageSection {
     max-width: 1280px;
     margin: 0 auto;
-    text-align: center;
+    text-align: right;
   }
 
-  .breadcrumbs {
-    text-align: left;
-    margin-bottom: 20px;
+  .breadcrumbs,
+  .authorRow,
+  .authorInfo,
+  .htmlSection,
+  .imageSection,
+  .article h1,
+  .article figure,
+  .article p,
+  .article a,
+  .article ul,
+  .article ol,
+  .article li {
+    margin: 20px 0;
   }
 
   .authorRow {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     gap: 15px;
   }
 
-  .authorImage img {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+  .imageSection {
+    width: 100%;
+    max-width: 800px;
   }
 
-  .authorInfo {
-    text-align: right;
+  .article ul,
+  .article ol {
+    padding-left: 20px;
+  }
+
+  .article li {
+    padding-left: 10px;
+    text-indent: -10px;
   }
 
   .middleSection {
@@ -202,58 +163,12 @@
   }
 
   .mainColumn {
-    width: 700px;
+    width: 60%;
     text-align: right;
   }
 
   .emptyColumn {
-    width: calc(1152px - 700px);
-  }
-
-  .article h1 {
-    margin: 64px;
-    font-size: 64px;
-    font-weight: 400;
-  }
-
-  .article img {
-    border-radius: 8px;
-  }
-
-  .article figure {
-    margin: 20px 0;
-  }
-
-  .article figcaption {
-    font-size: var(--font-size-span);
-    color: var(--color-analogous-dark);
-    font-family: 'Frank Ruhl Libre';
-    font-weight: 700;
-    text-align: right;
-  }
-
-  .article p,
-  .article a,
-  .htmlSection {
-    margin: 20px 0;
-    text-align: right;
-  }
-
-  .imageSection {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .article ul,
-  .article ol {
-    padding-left: 20px;
-    margin-left: 0;
-    list-style-position: inside;
-  }
-
-  .article li {
-    margin-bottom: 10px;
+    width: 30%;
+    margin-left: 5%;
   }
 }

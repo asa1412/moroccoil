@@ -129,24 +129,19 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
         <Breadcrumbs title={metadata.title} category={metadata.category} categoryUrl={categoryUrl} isCategoryPage={false} />
         <h1 className={styles.title}>{metadata.title}</h1>
         <div className={styles.authorRow}>
-          <div className={styles.authorImage}>
             <AuthorImage 
               src="/staticImages/author.webp" 
-              placeholderSrc="/staticImages/low-quality-placeholder.webp" 
               alt={`Photo of ${metadata.author}`} 
               width={50} 
-              height={50} 
-              style={{ width: '50px', height: '50px' }} // Maintain aspect ratio
-              priority={false} // Not a high priority image
+              height={50}
             />
-          </div>
           <div className={styles.authorInfo}>
             <div className={styles.author}>דניס רום</div>
             <div>{metadata.datePublished} • 5 דקות קריאה</div>
           </div>
         </div>
         {subjectImageSrc && (
-          <figure className={styles.subjectImage}>
+          <figure>
             <HighPriorityImage 
               src={subjectImageSrc}
               placeholderSrc="/staticImages/low-quality-placeholder.webp"
@@ -179,10 +174,11 @@ const Article = ({ content, metadata, subjectImageSrc, subjectImageMetadata, cat
                     width={articleImageSettings.width}
                     height={articleImageSettings.height}
                     priority={index === 0} // Prioritize the first image in the content
-                    style={{ width: '100%', height: '720px', maxHeight: '720px', color: 'transparent' }} // Maintain aspect ratio and max height
-                    />
+                    style={{ width: '100%', height: 'auto', maxHeight: '720px', color: 'transparent' }} // Maintain aspect ratio and max height
+                  />
                   <figcaption>{section.caption}</figcaption>
                 </figure>
+
               );
             }
             return null;

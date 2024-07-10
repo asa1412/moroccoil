@@ -80,20 +80,18 @@ class MyDocument extends Document {
             
             h3 {
               font-size: var(--font-size-h3);
-              margin-top: 4rem;
-              margin-bottom: 1.5rem;
+              margin-top: 2rem;
+              margin-bottom: 0.75rem;
             }
             
             h4 {
               font-size: var(--font-size-h4);
-              margin-top: 4rem;
-              margin-bottom: 1.5rem;
+              margin-top: 1rem;
+              margin-bottom: 0.35rem;
             }
             
             h5 {
               font-size: var(--font-size-h5);
-              margin-top: 4rem;
-              margin-bottom: 1.5rem;
             }
             
             h6 {

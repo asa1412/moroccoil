@@ -101,3 +101,14 @@ body.readable-font {
   text-decoration: none;
   color: #007bff;
 }
+
+figcaption {
+  font-size: var(--font-size-span);
+  color: var(--color-analogous-dark);
+  font-family: 'Frank Ruhl Libre';
+  text-align: right;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
