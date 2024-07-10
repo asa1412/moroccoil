@@ -2,8 +2,8 @@
 :root {
   
   /* Base Theme Colors */
-  --color-primary: #208030;        /* Primary Color */
-  --color-complementary: #0090c0;  /* Complementary Color */
-  --color-analogous: #c09000;      /* Analogous Color */
-  --color-triadic: #00c030;        /* Triadic Color */
+  --color-primary: #b41a22;        /* Primary Color */
+  --color-complementary: #00887a;  /* Complementary Color */
+  --color-analogous: #c36d26;      /* Analogous Color */
+  --color-triadic: #008f00;        /* Triadic Color */
 }
